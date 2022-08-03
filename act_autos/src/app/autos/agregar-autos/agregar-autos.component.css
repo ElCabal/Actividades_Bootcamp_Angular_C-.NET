@@ -1,0 +1,18 @@
+form {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  padding: 2px 4px;
+}
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #059669;
+  border: none;
+  border-radius: 5px;
+}

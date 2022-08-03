@@ -1,0 +1,6 @@
+<form (submit)="agregar()">
+  <input type="text" id="marca" name="marca" placeholder="Ingresar Marca" [(ngModel)]="nuevo.marca">
+  <input type="text" id="modelo" name="modelo" placeholder="Ingresar Modelo" [(ngModel)]="nuevo.modelo">
+  <input type="number" id="precio" name="precio" placeholder="Ingresa Precio" [(ngModel)]="nuevo.precio">
+  <button type="submit">Agregar</button>
+</form>

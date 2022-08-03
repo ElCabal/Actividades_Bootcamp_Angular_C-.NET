@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AutosService } from '../autos.service';
 import { IAuto } from '../interfaces/auto';
 
 @Component({
@@ -7,10 +8,14 @@ import { IAuto } from '../interfaces/auto';
   styleUrls: ['./listado-autos.component.css'],
 })
 export class ListadoAutosComponent implements OnInit {
-  @Input()
-  autos: IAuto[] = [];
+  /*   @Input()
+  autos: IAuto[] = []; */
 
-  constructor() {}
+  constructor(private autoService: AutosService) {}
+
+  get autos(): IAuto[] {
+    return this.autoService.autos;
+  }
 
   ngOnInit(): void {}
 }

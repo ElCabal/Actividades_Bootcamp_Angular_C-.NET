@@ -1,3 +1,19 @@
-<ul>
-  <li *ngFor="let auto of autos">{{auto.marca}} - {{auto.modelo}} - {{auto.precio}} </li>
-</ul>
+<div *ngIf="autos.length > 0; else vacio">
+  <table>
+    <thead>
+      <th>MARCA</th>
+      <th>MODELO</th>
+      <th>PRECIO</th>
+    </thead>
+    <tr *ngFor="let auto of autos">
+      <td>{{auto.marca}}</td>
+
+      <td>{{auto.modelo}}</td>
+
+      <td>$ {{auto.precio}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #vacio>
+  <p class="vacio">LISTA VACÍA</p>
+</ng-template>

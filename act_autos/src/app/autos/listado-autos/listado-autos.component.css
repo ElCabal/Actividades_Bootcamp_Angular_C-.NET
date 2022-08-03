@@ -1,0 +1,30 @@
+table {
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  flex-basis: 500px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border: solid 1px black; */
+  padding: 20px;
+}
+
+thead {
+  background-color: #059669;
+  color: white;
+  border-bottom: solid 5px black;
+}
+
+tr:nth-child(odd) {
+  background-color: #d1d5db;
+}
+
+.vacio {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: solid 5px #059669;
+}
